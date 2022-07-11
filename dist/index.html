@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Simple JavaScript Password Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="app-container" id="app">
+  <h1>Generate a<span>random password</span></h1>
+  <p>Never use an insecure password again.</p>
+  <button id="genBtn">Generate Passwords</button>
+  <button id="optionsBtn" data-open="modal">
+    <p class="sr-only">Show options</p>
+  </button>
+  <div class="password-container">
+    <div class="password-box">
+      <p class="password-text" id="boxOne"></p>
+      <button class="copy" id="copyOne" aria-label="Copy"></button>
+    </div>
+    <div class="password-box">
+      <p class="password-text" id="boxTwo"></p>
+      <button class="copy" id="copyTwo" aria-label="Copy"></button>
+    </div>
+  </div>
+</div>
+<div class="modal" id="modal">
+  <button id="closeBtn"><span aria-hidden="true">&times;</span><span class="sr-only">Close options</span></button>
+</div>
+<footer>
+  <div class="footer-content">
+    <p>All code by me. Link to original Figma design file<a href="https://www.figma.com/file/NEj9JDycMjF3XKXq7swoc9/Random-Password-Generator-(New-version)" target="_blank">
+         here</a></p>
+  </div>
+</footer>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
